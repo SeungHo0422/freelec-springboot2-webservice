@@ -5,7 +5,6 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        jcenter() //Deprecated
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -28,6 +27,7 @@ repositories {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
