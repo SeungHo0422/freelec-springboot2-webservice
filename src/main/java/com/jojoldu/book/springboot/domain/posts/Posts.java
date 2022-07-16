@@ -8,10 +8,10 @@ import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
-@Entity
+@Entity //테이블과 링크될 클래스임을 annotation
 public class Posts {
 
-    @Id
+    @Id //Primary Key임을 명시
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
